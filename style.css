@@ -8,6 +8,7 @@ body,html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background-color: black; 
+    position: relative;
 }
 #fornt-page{
     background-image: url(image/background.jpeg);
@@ -98,6 +99,101 @@ header{
     transform: translate(-50%,50%);
     left: 50%;
 }
+.tranding-now{
+    margin-bottom: 10px;
+    margin-left: 90px;
+    font-size: 24px;
+}
+
+.movies1, .movies2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* justify-content:space-between; */
+    position: relative;
+}
+.movie:hover{
+    transform: scale(1.08);
+}
+
+
+.movie {
+    flex: 0 0 200px;
+    height: 250px;
+    color: white;
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+    margin: 22px;
+    border-radius: 20px;
+    border:  solid purple;
+    transition: transform 0.6s ease-out;
+
+}
+.movie p{
+    background-color: red;
+    color: white;
+    padding: 3.5px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;    
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.movie h1{
+    position: absolute;
+    font-size: 100px;
+    color: rgba(0,0,0,0.9);
+    margin-left: -200px;
+    text-shadow:-1px -1px 0 white,  
+                1px -1px 0 white,
+                -1px  1px 0 white,
+                1px  1px 0 white;
+}
+#box1{
+    background-image: url(image/1.jpg);
+    background-size: 100% 100%;
+}
+#box2{
+    background-image: url(image/2.jpg);
+    background-size: 100% 100%;
+}
+#box3{
+    background-image: url(image/3.jpg);
+    background-size: 100% 100%;
+}
+#box4{
+    background-image: url(image/4.webp);
+    background-size: 100% 100%;
+}
+#box5{
+    background-image: url(image/5.jpeg);
+    background-size: 100% 100%;
+}
+#box6{
+    background-image: url(image/6.jpg);
+    background-size: 100% 100%;
+}
+#box7{
+    background-image: url(image/7.jpeg);
+    background-size: 100% 100%;
+}
+#box8{
+    background-image: url(image/8.cms);
+    background-size: 100% 100%;
+}
+#box9{
+    background-image: url(image/9.jpeg);
+    background-size: 100% 100%;
+}
+#box10{
+    background-image: url(image/10.jpeg);
+    background-size: 100% 100%;
+}
+
 .footer-text{
     display: flex;
     justify-content: space-between;
