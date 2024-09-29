@@ -63,12 +63,16 @@ header{
     background-color: red;
     border: solid black 1px;
 }
+#front-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
 .front-page-body{
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%,50%);
+    justify-content: center;
     text-align: center;
+    text-overflow:clip;
 }
 #input{
     width: 350px;
@@ -110,7 +114,6 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* justify-content:space-between; */
     position: relative;
 }
 .movie:hover{
@@ -196,9 +199,10 @@ header{
 
 .footer-text{
     display: flex;
-    justify-content: space-between;
-     margin-left: 180px;
-    margin-right: 300px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+     /* margin-left: 180px; */
+    /* margin-right: 300px; */
     margin-top: 20px;
     text-decoration: underline;
     color: rgb(182, 182, 183);
@@ -213,7 +217,7 @@ header{
     font-size: 15px;
 }
 footer p, .footer-language{
-    margin-left: 180px;
+    margin-left: 250px;
     margin-top: 20px;
 }
 .footer-language{
@@ -238,6 +242,7 @@ footer p, .footer-language{
     display: flex;
     margin-top: 10px;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 
 
 }
