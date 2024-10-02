@@ -1,19 +1,48 @@
 function toggleText(button) {
-    var text = button.querySelector('.click-text');
+    let allText = document.querySelectorAll('.click-text');
+    allText.forEach(function(text) {
+        if (text !== button.querySelector('.click-text')) {
+            text.style.display = "none";
+        }
+    });
+
+    let text = button.querySelector('.click-text');
     if (text.style.display === "none" || text.style.display === "") {
         text.style.display = "block";
     } else {
         text.style.display = "none";
     }
 }
-function cross(button){
-    let Element = button.querySelector('.click-button');
-    Element.classList.toggle('cross')
+
+
+function movie(selectedBox) {
+    let allMovies = document.querySelectorAll('.movie');
+
+    allMovies.forEach(function (movieBox) {
+        if (movieBox !== selectedBox) {
+            let detail = movieBox.querySelector('.detail');
+            detail.style.display = "none"; 
+        }
+     
+    });
+
+    let selectedDetail = selectedBox.querySelector('.detail');
+    if (selectedDetail.style.display === "none" || selectedDetail.style.display === "") {
+        selectedDetail.style.display = "block"; 
+    } else {
+        selectedDetail.style.display = "none"; 
+    }
 }
-function movie(button1){
-    var box = button1.querySelector('.detail');
-    if(box.style.display === "none" || box.style.display === ""){
-        box.style.display = "block";
-    } else{
-        box.style.display = "none";    }
+
+
+function cross(button) {
+    let allButtons = document.querySelectorAll('.click-button');
+    allButtons.forEach(function(Element) {
+        if (Element !== button.querySelector('.click-button')) {
+            Element.classList.remove('cross');
+        }
+    });
+
+    let Element = button.querySelector('.click-button');
+    Element.classList.toggle('cross');
 }
